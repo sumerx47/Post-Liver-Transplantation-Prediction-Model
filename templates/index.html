@@ -1,1 +1,49 @@
-<h1> welcome to the </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Liver Transplantation Prediction Model</title>
+</head>
+<body>
+    <h1>Post Liver Transplantation Prediction Model</h1>
+    <form method="POST">
+        Donor Age (1-100): <input type="text" name="donor_age"><br>
+        Donor Gender (male = 1, female = 0): <input type="text" name="donor_gender"><br>
+        Donor BMI (for e.g., 30.9): <input type="text" name="donor_bmi"><br>
+        Donor Cause of Death (accident = 0, other = 1, stroke = 2): <input type="text" name="donor_cause_of_death"><br>
+        Donor Diabetes (yes = 1, No = 0): <input type="text" name="donor_diabetes"><br>
+        Donor Hypertension (yes = 1, No = 0): <input type="text" name="donor_hypertension"><br>
+        Donor Alcohol Abuse (yes = 1, No = 0): <input type="text" name="donor_alcohol_abuse"><br>
+        Donor Smoking (yes = 1, No = 0): <input type="text" name="donor_smoking"><br>
+        Donor Lymphocyte (yes = 1, No = 0): <input type="text" name="donor_lymphocyte"><br>
+        Donor Hepatitis B (yes = 1, No = 0): <input type="text" name="donor_hepatitis_b"><br>
+        Donor Hepatitis C (yes = 1, No = 0): <input type="text" name="donor_hepatitis_c"><br>
+        Recipient Etiology (alcohol = 0, hepatitis = 1, nafld = 2, other = 3): <input type="text" name="recipient_etiology"><br>
+        Recipient MELD Score (10-40): <input type="text" name="recipient_meld_score"><br>
+        Recipient Age (1-100): <input type="text" name="recipient_age"><br>
+        Recipient Gender (male = 1, female = 0): <input type="text" name="recipient_gender"><br>
+        Recipient BMI (for e.g., 28.9): <input type="text" name="recipient_bmi"><br>
+        Recipient Diabetes (yes = 1, No = 0): <input type="text" name="recipient_diabetes"><br>
+        Recipient Hypertension (yes = 1, No = 0): <input type="text" name="recipient_hypertension"><br>
+        Recipient Alcohol Abuse (yes = 1, No = 0): <input type="text" name="recipient_alcohol_abuse"><br>
+        Recipient Smoking (yes = 1, No = 0): <input type="text" name="recipient_smoking"><br>
+        Recipient Lymphocyte (yes = 1, No = 0): <input type="text" name="recipient_lymphocyte"><br>
+        Recipient Hepatitis B (yes = 1, No = 0): <input type="text" name="recipient_hepatitis_b"><br>
+        Recipient Hepatitis C (yes = 1, No = 0): <input type="text" name="recipient_hepatitis_c"><br>
+        Recipient Albumin Level (20-60): <input type="text" name="recipient_albumin_level"><br>
+        Recipient Alcoholic Cirrhosis (0-100): <input type="text" name="recipient_alcoholic_cirrhosis"><br>
+        Recipient Primary Biliary Cirrhosis (0.0-3.0): <input type="text" name="recipient_primary_biliary_cirrhosis"><br>
+        Recipient Na (0.0-60.0): <input type="text" name="recipient_na"><br>
+        Recipient Mg (0.0-10.0): <input type="text" name="recipient_mg"><br>
+        Recipient WBC (2000-50000): <input type="text" name="recipient_wbc"><br>
+        Recipient Platelets (20000-500000): <input type="text" name="recipient_platelets"><br>
+        Recipient Cold Ischemia Time (0.0-20.0): <input type="text" name="recipient_cold_ischemia_time"><br>
+        Recipient Warm Ischemia Time (0.0-20.0): <input type="text" name="recipient_warm_ischemia_time"><br>
+        Recipient Blood Transfusion (0.0-20.0): <input type="text" name="recipient_blood_transfusion"><br>
+        Recipient Immunosuppressant Medication (cyclosporine = 0, other = 1, tacrolimus = 2): <input type="text" name="recipient_immunosuppressant_medication"><br>
+        Recipient Rejection Episodes (0-10): <input type="text" name="recipient_rejection_episodes"><br>
+
+        <button type="submit">Result</button>
+    </form>
+    <h2>Prediction Result: {{ complication }}</h2>
+</body>
+</html>
