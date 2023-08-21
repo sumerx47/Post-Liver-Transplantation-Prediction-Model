@@ -13,7 +13,7 @@ STEP 02- install the requirements
 pip install -r requirements.
 
 step 03 - clone repository
-git clone ""
+git clone "https://github.com/sumerx47/post-liver-transplantation-prediction-model.git"
 
 
 
