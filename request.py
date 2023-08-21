@@ -6,7 +6,7 @@ url = "http://localhost:5000"
 # Sample data for the input fields
 data = {
     "donor_age": 35,
-    "donor_gender: 1,
+    "donor_gender": 1,
     "donor_bmi": 28.9,
     "donor_cause_of_death": 0,
     "donor_diabetes": 0,
